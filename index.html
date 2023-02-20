@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/atomic.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/transitions-effects.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Mi Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="a-header a-header--logo">
+                    <p>MP</p><p>DEV</p>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <ul class="nav-middle__ul">
+                    <li class="nav-middle__li"><a class="a-header" href="#quiensoy">¿Quién Soy?</a></li>
+                    <li class="nav-middle__li"><a class="a-header" href="#practicas">Prácticas</a></li>
+                    <li class="nav-middle__li"><a class="a-header" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-middle__li"><a class="a-header" href="">Sobre mí</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div style="display: flex; align-items: center; gap: 4px; margin-bottom: 6px;">
+                    <p class="darkmode-line" class="p-small">Modo Oscuro</p>
+                    <i class="fa-regular fa-moon nav-right__i"></i>
+                </div>
+                <div>
+                    <a class="a-header" href="">Contacto</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <!-- <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button> -->
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <section class="quien-soy" id="quiensoy">
+            <div class="quien-soy__container section-container">
+                <div data-aos="fade-right" data-aos-duration="800" class="quien-soy__section-title">
+                    <div class="quien-soy__title-container">
+                        <div class="quien-soy__subtitle-container subtitle-bloque">
+                            <span class="subtitle-line"></span>
+                            <h3 class="quien-soy__h3 name-subtitle">Q U I E N &nbsp; S O Y</h3>
+                        </div>
+                        <div>
+                            <h1 class="quien-soy__h2 name-title">Mateo&nbsp;</h1>
+                            <h1 class="quien-soy__h2 name-title">Pautasso</h1>
+                        </div>
+                    </div>
+                    <p class="quien-soy__p name-p">Mi nombre es Mateo Pautasso, tengo 20 años de edad y soy Desarrollador Web Front-End Junior. Me formé y sigo formando de manera autodidacta. Realicé este sitio web con la finalidad de que funcione como Portfolio personal, de esta forma podrán conocerme mejor.</p>
+                    <div class="quien-soy__redes">
+                        <a href="">
+                            <img class="i-redes i-redes-24" src="./assets/icons/icons8-instagram-48.png" alt="">
+                        </a>
+                        <a href="">
+                            <img class="i-redes i-redes-24" src="./assets/icons/icons8-github-48.png" alt="">
+                        </a>
+                        <a href="">
+                            <img class="i-redes i-redes-24" src="./assets/icons/icons8-linkedin-48.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <figure data-aos="fade-up" data-aos-duration="800" class="quien-soy__profile-image profile-image ">
+                    <img class="profile-image__img" src="assets/images/myAvatarGrandeGrey.png" alt="">
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="skills" id="skills">
+            <div class="skills__container section-container">
+                <div class="skills__section-title section-title">
+                    <div class="skills__subtitle-bloque subtitle-bloque">
+                        <span class="subtitle-line"></span>
+                        <h3>C O N O C I M I E N T O S</h3>
+                    </div>
+                    <h1>Tecnologías & Skills</h1>
+                </div>
+                <div class="skills__section-cards">
+                    <div>
+                        <img class="i-redes-48" src="./assets/icons/icons8-responsive-purp100.png" alt="">
+                        <p>Desarrollo Web Responsive</p>
+                        <p class="skills__p-card p-small">Manejo de Flexbox y Grid layout.
+                        </p>
+                    </div>
+                    <div>
+                        <img class="i-redes-48" src="./assets/icons/icons8-tools-purp100.png" alt="">
+                        <p>Frameworks</p>
+                        <p class="skills__p-card p-small">Implemetación de Bootstrap y React</p>
+                    </div>
+                    <div>
+                        <img class="i-redes-48" src="./assets/icons/icons8-git-purp100.png" alt="">
+                        <p>GIT & GitHub</p>
+                        <p class="skills__p-card p-small">Manejo de Git y GitHub nivel intermedio.</p>
+                    </div>
+                </div>
+    
+                <div class="skills__section-habilidades section-habilidades">
+                    <p class="section-habilidades__p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in quam, dolorem rem nulla quis molestiae vero deserunt. Incidunt vitae nihil exercitationem. Sequi eius cupiditate velit incidunt magnam asperiores et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex sed veritatis fugiat sint repellendus, ratione recusandae cumque provident quo, earum quae voluptates ipsum est aliquid reprehenderit ipsam unde vel.
+                    </p>
+                    <h2>Stack de Tecnologías:</h2>
+                    <div class="section-habilidades__habilidades habilidades">
+                        <div class="habilidades__container">
+                            <div>
+                                <p>Html</p>
+                                <span></span>
+                            </div>
+                            <div>
+                                <p>Css</p>
+                                <span></span>
+                            </div>
+                            <div>
+                                <p>Javascript</p>
+                                <span></span>
+                            </div>
+                            <div>
+                                <p>Git</p>
+                                <span></span>
+                            </div>
+                            <div>
+                                <p>Bootstrap</p>
+                                <span></span>
+                            </div>
+                            <div>
+                                <p>Framework JS</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="practicas" id="practicas">
+            <div class="practicas__container section-container">
+                <div class="practicas__section-title section-title">
+                    <div class="practicas__subtitle-bloque subtitle-bloque">
+                        <span class="subtitle-line"></span>
+                        <h3>P R Á C T I C A S</h3>
+                    </div>
+                    <h1>Proyectos</h1>
+                    <div class="practicas__btn-move">
+                        <div class="practicas__btn-move--left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="practicas__btn-move--right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="practicas__card-container">
+                    <!-- Cards desde js -->
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+
+        </section>
+
+
+        <section>
+
+        </section>
+
+    </main>
+    <!-- <footer>
+        <div>
+            <a href=""><img class="i-redes-24" src="./assets/icons/icons8-instagram-48.png" alt=""></a>
+            <a href=""><img class="i-redes-24" src="./assets/icons/icons8-github-48.png" alt=""></a>
+            <a href=""><img class="i-redes-24" src="./assets/icons/icons8-linkedin-48.png" alt=""></a>
+        </div>
+    </footer> -->
+    <script src="https://kit.fontawesome.com/fe2f95854a.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/cards-proyectos.js"></script>
+    <script src="./js/darkMode.js"></script>
+</body>
+</html>
