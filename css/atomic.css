@@ -185,10 +185,6 @@ p {
     padding-right: 8px;
     transition: all 0.2s;
 }
-.nav-right .fa-regular:hover {
-    background-color: var(--soft-purple);
-    transition: all 0.2s;
-}
 
 .section-title {
     padding-bottom: 40px;
@@ -234,8 +230,11 @@ footer div {
 footer {
     width: 100%;
     height: 100px;
+    background-color: transparent;
 }
 footer div {
+    width: 100%;
+    height: 100%;
     justify-content: center;
     gap: 24px;
 }
@@ -261,11 +260,13 @@ footer div a:hover {
 .quien-soy {
     position: relative;
     z-index: 0;
+    background-color: var(--white);
 }
 .quien-soy__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     height: 90vh;
+    background-color: var(--white);
 }
 
 .quien-soy__section-title {
@@ -358,7 +359,6 @@ footer div a:hover {
     grid-template-rows: 1fr 4fr;
     align-items: center;
     background-color: var(--soft-grey);
-
 }
 .skills__section-title {
     align-self: start;
@@ -479,6 +479,12 @@ footer div a:hover {
 
 
 /* Section practicas */
+.practicas {
+    background-color: var(--white);
+}
+.practicas__container {
+    background-color: var(--white);
+}
 
 .practicas__section-title {
     position: relative;
@@ -602,6 +608,9 @@ footer div a:hover {
 
 @media screen and (max-width: 800px){
 
+    header {
+        height: 100px;
+    }
     body header {
         height: 90px;
     }
@@ -621,6 +630,12 @@ footer div a:hover {
         display: flex;
     }
 
+}
+@media screen and (min-width: 1024px) {
+    .nav-right .fa-regular:hover {
+        background-color: var(--soft-purple);
+        transition: all 0.2s;
+    }
 }
 @media screen and (max-width: 1024px){
     .section-container {
@@ -662,6 +677,7 @@ footer div a:hover {
 
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+        padding-top: 20px;
     }
 
     .quien-soy__redes {

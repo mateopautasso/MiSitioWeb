@@ -12,13 +12,13 @@
 /* Custom properties */
 :root {
   /* colors */
-  /* --black: #232E35; */
   --black: #181f24;
   --grey: #656D72;
   --soft-grey: #F0F0F0;
   /* --grey-lighter: #FBFBFB; */
   --grey-lighter: #ededed;
-  --white: #FFFFFF;
+  /* --white: #FFFFFF; */
+  --white: #fcf9ff;
 
   --purple: #7E74F1;
   --soft-purple: #ada7f5;
