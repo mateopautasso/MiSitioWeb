@@ -23,11 +23,11 @@ const cards = []
 function crearCard (url,title,tech,link) {
     cards.push(newCard = new CardProyectos(url,title,tech,link))
 }
-crearCard('../assets/images/calculadora.png','Calculadora con JS','Html, Css, Javascript','https://mateopautasso.github.io/Calculadora/')
-crearCard('../assets/images/jnSpecter.png','Specter | Codewell Challenge','Html, Css','https://mateopautasso.github.io/JohnathanSpecter-web/')
-crearCard('../assets/images/yelpCamp.png','YpCamp | Codewell Challenge','Html, Css','https://mateopautasso.github.io/YelpCamp-web/')
-crearCard('../assets/images/bataBit.png','Landing page Mobile-Tablet','Html, Css','https://mateopautasso.github.io/Batabit-design-mobile-tablet/')
-crearCard('../assets/images/yardSale.png','Homepage web E-Commerce','Html, Css, Javascript','https://mateopautasso.github.io/Yard-Sale__e-commerce/')
+crearCard('calculadora.png','Calculadora con JS','Html, Css, Javascript','https://mateopautasso.github.io/Calculadora/')
+crearCard('jnSpecter.png','Specter | Codewell Challenge','Html, Css','https://mateopautasso.github.io/JohnathanSpecter-web/')
+crearCard('yelpCamp.png','YpCamp | Codewell Challenge','Html, Css','https://mateopautasso.github.io/YelpCamp-web/')
+crearCard('bataBit.png','Landing page Mobile-Tablet','Html, Css','https://mateopautasso.github.io/Batabit-design-mobile-tablet/')
+crearCard('yardSale.png','Homepage web E-Commerce','Html, Css, Javascript','https://mateopautasso.github.io/Yard-Sale__e-commerce/')
 
 for(i = 0; i < cards.length; i++) {
 
