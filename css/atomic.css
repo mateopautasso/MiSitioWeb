@@ -273,7 +273,7 @@ footer div a:hover {
 .quien-soy__section-title {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 24px;
 }
 
 .quien-soy__title-container,
@@ -678,10 +678,16 @@ footer div a:hover {
     .name-p {
         margin-bottom: 28px;
     }
+    .quien-soy__section-title {
+    gap: 32px;
+    }
 }
 @media screen and (min-height: 813px) and (max-height: 926px){
     .name-p {
         margin-bottom: 44px;
+    }
+        .quien-soy__section-title {
+    gap: 32px;
     }
 }
 @media screen and (min-width: 500px){
