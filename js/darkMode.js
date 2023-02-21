@@ -28,6 +28,9 @@ btnDarkMode.addEventListener('click', ()=>{
         iRedes[3].setAttribute('src','./assets/icons/icons8-instagram-48-white.png')
         iRedes[4].setAttribute('src','./assets/icons/icons8-github-48-white.png')
         iRedes[5].setAttribute('src','./assets/icons/icons8-linkedin-48-white.png')
+        iRedes[6].setAttribute('src','./assets/icons/icons8-instagram-48-white.png')
+        iRedes[7].setAttribute('src','./assets/icons/icons8-github-48-white.png')
+        iRedes[8].setAttribute('src','./assets/icons/icons8-linkedin-48-white.png')
 
         darkModeActive = true;
     } else {
@@ -52,6 +55,9 @@ btnDarkMode.addEventListener('click', ()=>{
         iRedes[3].setAttribute('src','./assets/icons/icons8-instagram-48.png')
         iRedes[4].setAttribute('src','./assets/icons/icons8-github-48.png')
         iRedes[5].setAttribute('src','./assets/icons/icons8-linkedin-48.png')
+        iRedes[6].setAttribute('src','./assets/icons/icons8-instagram-48.png')
+        iRedes[7].setAttribute('src','./assets/icons/icons8-github-48.png')
+        iRedes[8].setAttribute('src','./assets/icons/icons8-linkedin-48.png')
 
         document.querySelector('.profile-image').classList.remove('profile-image-transicion')
 

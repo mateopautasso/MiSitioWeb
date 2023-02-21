@@ -307,6 +307,7 @@ footer div a:hover {
     display: flex;
     gap: 24px;
 }
+
 .quien-soy__redes a {
     padding: 4px;
     border-radius: 50%;
@@ -643,7 +644,7 @@ footer div a:hover {
 
 /* --- Quien soy media --- */
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 500px){
     .name-title {
         font-size: 3rem;
     }
@@ -653,13 +654,24 @@ footer div a:hover {
     }
     .name-p {
         font-size: 1.5rem;
+        margin-bottom: 40px;
     }
     .quien-soy__profile-image {
         width: 280px!important;
         height: 280px!important;
     }
     .quien-soy__redes {
-        align-self: center;
+        display: none;
+    }
+    .quien-soy__redes--mobile {
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 18px;
+    }
+}
+@media screen and (min-width: 500px){
+    .quien-soy__redes--mobile {
+        display: none;
     }
 }
 @media screen and (max-width: 800px){
@@ -678,6 +690,7 @@ footer div a:hover {
     .quien-soy__redes {
         margin-bottom: 36px;
     }
+
 
     .quien-soy__profile-image {
         justify-self: center!important;
