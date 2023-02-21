@@ -33,7 +33,7 @@ for(i = 0; i < cards.length; i++) {
 
 let htmlCard = 
 `
-<div class="practicas__card card">
+<div class="practicas__card card" data-aos="zoom-in" data-aos-duration="500">
 <figure>
     <img src="./assets/images/${cards[i].url}" alt="">
 </figure>
