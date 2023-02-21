@@ -25,9 +25,11 @@ h3 {
     font-weight: 500;
     font-size: 1.6rem;
     padding-bottom: 4px;
+    transition: color 0.1s;
 }
 .a-header--logo{
     color: var(--black)!important;
+    transition: color 0.5s;
 }
 .a-header:not(.a-header--logo)::before {
     content: '';
@@ -265,6 +267,7 @@ footer div a:hover {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     height: 90vh;
+    transition: color 0.4s;
 }
 
 .quien-soy__section-title {
