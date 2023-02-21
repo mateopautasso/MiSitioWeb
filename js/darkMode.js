@@ -32,7 +32,7 @@ btnDarkMode.addEventListener('click', ()=>{
         styleDocument.setProperty('--grey', '#656D72')
         styleDocument.setProperty('--soft-grey', '#f0f0f0')
         styleDocument.setProperty('--grey-lighter', '#FBFBFB')
-        styleDocument.setProperty('--white', '#fff')
+        styleDocument.setProperty('--white', '#fcf9ff')
 
         btnDarkMode.classList.remove('btnDarkModeActive')
         lineDarkMode.classList.remove('darkmode-line-active')
