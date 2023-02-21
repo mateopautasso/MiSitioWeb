@@ -11,6 +11,3 @@ window.addEventListener('scroll', ()=>{
         header.classList.remove("header-inactive")
     }
 })
-
-
-// Menu mobile desplegable

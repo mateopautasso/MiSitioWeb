@@ -260,13 +260,11 @@ footer div a:hover {
 .quien-soy {
     position: relative;
     z-index: 0;
-    background-color: var(--white);
 }
 .quien-soy__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     height: 90vh;
-    background-color: var(--white);
 }
 
 .quien-soy__section-title {
@@ -315,37 +313,35 @@ footer div a:hover {
     background-color: var(--soft-purple);
 }
 
-.profile-image {
-    justify-self: end;
-
+.quien-soy__profile-image {
     position: relative;
     width: 320px;
+    height: 320px;
+    z-index: 0;
+    justify-self: end;
+}
+.profile-image__div-img,
+.profile-image__div-sombra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.profile-image__div-img {
+    background-color: red;
+    z-index: 3;
     border-radius: 8px;
-    object-fit: cover;
-
     border: 2px solid rgb(40 57 68);
     box-shadow: 10px 10px 18px -6px rgb(32, 31, 31);
     background: linear-gradient(135deg, rgba(173,167,245,1) 0%, rgba(126,116,241,1) 100%);
 }
-.profile-image::after {
-    content: '';
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    top: 0px;
-    left: 0px;
-    transform: rotate(-10deg);
-    z-index: -1;
-
+.profile-image__div-sombra {
     background-color: var(--purple);
     box-shadow: 10px 10px 12px -6px black;
+    z-index: 2;
+    transform: rotate(-10deg);
+    border-radius: 8px;
 }
-.profile-image__img {
-    width: 100%;
-    height: 100%;
-}
+
 
 
 /* --- Section skills --- */
@@ -359,6 +355,7 @@ footer div a:hover {
     grid-template-rows: 1fr 4fr;
     align-items: center;
     background-color: var(--soft-grey);
+
 }
 .skills__section-title {
     align-self: start;
@@ -479,12 +476,6 @@ footer div a:hover {
 
 
 /* Section practicas */
-.practicas {
-    background-color: var(--white);
-}
-.practicas__container {
-    background-color: var(--white);
-}
 
 .practicas__section-title {
     position: relative;
@@ -660,8 +651,9 @@ footer div a:hover {
     .name-p {
         font-size: 1.5rem;
     }
-    .profile-image {
-        width: 280px;
+    .quien-soy__profile-image {
+        width: 280px!important;
+        height: 280px!important;
     }
     .quien-soy__redes {
         align-self: center;
@@ -684,8 +676,8 @@ footer div a:hover {
         margin-bottom: 36px;
     }
 
-    .profile-image {
-        justify-self: center;
+    .quien-soy__profile-image {
+        justify-self: center!important;
     }
 }
 
@@ -746,5 +738,4 @@ footer div a:hover {
         margin-right: 86px;
     }
 }
-
 
