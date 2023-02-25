@@ -252,7 +252,6 @@ footer div a:hover {
 
 .section-container {
     width: 100%;
-    display: grid;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -265,6 +264,7 @@ footer div a:hover {
     z-index: 0;
 }
 .quien-soy__container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     height: 90vh;
@@ -914,16 +914,15 @@ footer div a:hover {
 }
 @media screen and (max-width: 330px) {
     .contacto__grid-container {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .direcciones-contacto {
-        padding: 10px;
+        padding: 0px;
     }
     .contacto__form-container {
-        padding: 10px;
+        padding: 0px;
     }
-
 }
 
 

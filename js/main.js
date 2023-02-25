@@ -14,16 +14,7 @@ window.addEventListener('scroll', ()=>{
 
 
 // Scroll a section contacto
-const aContacto = document.getElementById('contacto-section')
-const aSkills = document.getElementById('skills-section')
-const aPracticas = document.getElementById('practicas-section')
-const aProyectos = document.getElementById('proyectos-section')
 const aHeader = document.querySelectorAll('.a-header');
-
-aContacto.addEventListener('click', (e)=>{
-    e.preventDefault()
-    scroll(0,2250)
-})
 
 aHeader.forEach((a)=>{
     a.addEventListener('click',(e)=>{
