@@ -598,6 +598,81 @@ footer div a:hover {
 
 
 
+/* Section contacto */
+.contacto {
+    background-color: var(--soft-grey);
+    min-height: 100vh;
+}
+.contacto__container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    column-gap: 80px;
+    background-color: var(--soft-grey);
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form input {
+    padding: 16px;
+    border-radius: 8px;
+}
+.form__input-msg {
+    padding: 16px;
+    border-radius: 8px;
+    min-height: 156px;
+    max-height: 208px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--white);
+}
+.form input:not(.form__input-submit) {
+    background-color: var(--white);
+}
+.form__input-submit {
+    color: white!important;
+    background-color: var(--purple);
+    cursor: pointer;
+}
+.form__input-submit:hover {
+    background-color: var(--soft-purple);
+}
+.form__input-submit:active {
+    background-color: var(--soft-purple);
+}
+
+
+
+.contacto__direcciones-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px
+}
+.direcciones-contacto__containers {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.direcciones-contacto__containers figure {
+    display: block;
+    width: 48px;
+    padding: 10px;
+    border-radius: 12px;
+
+    background-color: var(--soft-2-purple);
+}
+
+.direcciones-contacto__containers p:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
 /* --- General Media Queries --- */
 
 @media screen and (min-width: 800px){
@@ -768,7 +843,7 @@ footer div a:hover {
 }
 
 
-/* Practicas media */
+/* --- Practicas media --- */
 @media screen and (max-width: 375px) {
     .practicas__card {
         width: 280px;
@@ -794,4 +869,49 @@ footer div a:hover {
         margin-right: 86px;
     }
 }
+
+
+/* --- Contacto media queries --- */
+@media screen and (max-width: 1300px) {
+    .contacto__container {
+        column-gap: 40px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .contacto__container {
+        column-gap: 20px;
+    }
+    .direcciones-contacto {
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .contacto__container {
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr 3fr;
+        row-gap: 40px;
+    }
+    .contacto__form-container {
+        padding: 0px;
+        grid-row: 2 / 3;
+    }
+    .direcciones-contacto {
+        padding: 0px;
+        grid-row: 1 / 2;
+    }
+}
+@media screen and (max-width: 330px) {
+    .contacto__container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .direcciones-contacto {
+        padding: 10px;
+    }
+    .contacto__form-container {
+        padding: 10px;
+    }
+
+}
+
 
