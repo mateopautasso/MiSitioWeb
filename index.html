@@ -9,7 +9,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/atomic.css">
-        <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/transitions-effects.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Mi Portfolio</title>
@@ -24,10 +23,10 @@
                 </div>
                 <div class="nav-middle">
                     <ul class="nav-middle__ul">
-                        <li class="nav-middle__li"><a class="a-header" href="#skills">Stack</a></li>
-                        <li class="nav-middle__li"><a class="a-header" href="#practicas">Prácticas</a></li>
-                        <li class="nav-middle__li"><a class="a-header" href="#proyectos">Proyectos</a></li>
-                        <li class="nav-middle__li"><a class="a-header" href="">Sobre mí</a></li>
+                        <li class="nav-middle__li"><a class="a-header" id="skills-section" href="">Stack</a></li>
+                        <li class="nav-middle__li"><a class="a-header" id="practicas-section" href="">Prácticas</a></li>
+                        <li class="nav-middle__li"><a class="a-header" id="proyectos-section" href="">Proyectos</a></li>
+                        <li class="nav-middle__li"><a class="a-header" id="sobremi-section" href="">Sobre mí</a></li>
                     </ul>
                 </div>
                 <div class="nav-right">
@@ -36,7 +35,7 @@
                         <i class="fa-regular fa-moon nav-right__i"></i>
                     </div>
                     <div>
-                        <a class="a-header" href="">Contacto</a>
+                        <a class="a-header a-header--contacto" id="contacto-section" href="">Contacto</a>
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
                     <!-- <button class="mobile-menu-btn">
@@ -48,7 +47,7 @@
             </nav>
         </header>
         <main> 
-            <section class="quien-soy" id="quiensoy">
+            <section class="quien-soy">
                 <div class="quien-soy__container section-container">
                     <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="100" class="quien-soy__section-title">
                         <div class="quien-soy__title-container">
@@ -104,7 +103,7 @@
                     <div class="skills__section-title section-title">
                         <div class="skills__subtitle-bloque subtitle-bloque">
                             <span class="subtitle-line"></span>
-                            <h3 id="skills">C O N O C I M I E N T O S</h3>
+                            <h3>C O N O C I M I E N T O S</h3>
                         </div>
                         <h1>Tecnologías & Skills</h1>
                     </div>
@@ -171,7 +170,7 @@
                     <div class="practicas__section-title section-title">
                         <div class="practicas__subtitle-bloque subtitle-bloque">
                             <span class="subtitle-line"></span>
-                            <h3 id="practicas">P R Á C T I C A S</h3>
+                            <h3>P R Á C T I C A S</h3>
                         </div>
                         <h1>Proyectos</h1>
                         <div class="practicas__btn-move">
@@ -192,40 +191,51 @@
 
             <section class="contacto">
                 <div class="contacto__container section-container">
-                    <div class="contacto__form-container">   
-                        <form class="contacto__form form" action="">
-                            <input class="form__input-name" placeholder="Nombre" type="text" name="name" id="name">
-                            <input class="form__input-email" placeholder="Correo" type="email" name="email" id="email">
-                            <textarea class="form__input-msg" placeholder="Mensaje" name="msg" id="msg" cols="30" rows="10"></textarea>
-                            <input class="form__input-submit" type="submit" name="submit" value="Enviar" id="submit">
-                        </form>
+                    <div class="contacto__section-title section-title">
+                        <div class="contacto__subtitle-bloque subtitle-bloque">
+                            <span class="subtitle-line"></span>
+                            <h3>C O N T A C T O</h3>
+                        </div>
+                        <h1>Contactame</h1>
                     </div>
-                    <div class="contacto__direcciones-contacto direcciones-contacto">
-                        <div class="direcciones-contacto__containers">
-                            <figure>
-                                <img class="i-redes-48" src="./assets/icons/icons8-map-pin-100.png" alt="">
-                            </figure>
-                            <div>
-                                <p>Localidad</p>
-                                <p>Paraná, Entre Ríos, Argentina</p>
-                            </div>
+                    <div class="contacto__grid-container">
+                        <div class="contacto__form-container">   
+                            <form enctype="text/plain" class="contacto__form form" action="" method="post">
+                                <input class="form__input-name" placeholder="Nombre" type="text" name="name" id="name" required>
+                                <input class="form__input-email" placeholder="Correo" type="email" name="email" id="email" required>
+                                <textarea class="form__input-msg" placeholder="Mensaje" name="msg" id="msg" cols="30" rows="10" required></textarea>
+                                <input class="form__input-submit" type="submit" name="submit" value="Enviar" id="submit">
+                            </form>
+                            <a id="linkEmail" href=""></a>
+                            <p></p>
                         </div>
-                        <div class="direcciones-contacto__containers">
-                            <figure>
-                                <img class="i-redes-48" src="./assets/icons/icons8-phone-100.png" alt="">
-                            </figure>
-                            <div>
-                                <p>Celular</p>
-                                <p>+54 3434284931</p>
+                        <div class="contacto__direcciones-contacto direcciones-contacto">
+                            <div class="direcciones-contacto__containers">
+                                <figure>
+                                    <img class="i-redes-48" src="./assets/icons/icons8-map-pin-100.png" alt="">
+                                </figure>
+                                <div>
+                                    <p>Localidad</p>
+                                    <p>Paraná, Entre Ríos, Argentina</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="direcciones-contacto__containers">
-                            <figure>
-                                <img class="i-redes-48" src="./assets/icons/icons8-mail-100.png" alt="">
-                            </figure>
-                            <div>
-                                <p>Correo</p>
-                                <p>mateopautassodev@gmail.com</p>
+                            <div class="direcciones-contacto__containers">
+                                <figure>
+                                    <img class="i-redes-48" src="./assets/icons/icons8-phone-100.png" alt="">
+                                </figure>
+                                <div>
+                                    <p>Celular</p>
+                                    <p>+54 3434284931</p>
+                                </div>
+                            </div>
+                            <div class="direcciones-contacto__containers">
+                                <figure>
+                                    <img class="i-redes-48" src="./assets/icons/icons8-mail-100.png" alt="">
+                                </figure>
+                                <div>
+                                    <p>Correo</p>
+                                    <p>mateopautassodev@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,5 +262,6 @@
         </script>
         <script src="./js/cards-proyectos.js"></script>
         <script src="./js/darkMode.js"></script>
+        <script src="./js/form.js"></script>
     </body>
 </html>
