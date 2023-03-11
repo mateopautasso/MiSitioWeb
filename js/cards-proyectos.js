@@ -23,6 +23,7 @@ const cards = []
 function crearCard (url,title,tech,link) {
     cards.push(newCard = new CardProyectos(url,title,tech,link))
 }
+crearCard('formProfesional.png','Validación de Formulario','Html, Css, Javascript','https://mateopautasso.github.io/FormularioProfesional/')
 crearCard('temporizador.png','Temporizador','Html, Css, Javascript','https://mateopautasso.github.io/Temporizador/')
 crearCard('calculadora.png','Calculadora con JS','Html, Css, Javascript','https://mateopautasso.github.io/Calculadora/')
 crearCard('jnSpecter.png','Specter | Codewell Challenge','Html, Css','https://mateopautasso.github.io/JohnathanSpecter-web/')
